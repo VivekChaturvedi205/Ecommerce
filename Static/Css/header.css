@@ -1,0 +1,114 @@
+.container-fluid{
+    background-color:#2874F0;
+    padding: 10px;
+}
+
+.col-md-4 input{
+    width:90%;
+    
+    position: relative;
+    margin-top: 15px;
+}
+
+.col-md-2{
+    text-align: right;  
+}
+
+h6{
+    color:white;
+}
+
+.col-md-2 button{ 
+    border:none;
+    background-color:white;
+    margin-top: 15px;
+    color:#2874F0;
+    font-weight: bolder;    
+}
+
+#more{
+    text-align: center;
+    font-weight: bolder;
+    margin-top:15px;
+}
+
+i{
+    text-align: center;
+    font-weight: bolder;
+}
+
+a{
+    position:relative;
+    margin-left: -30px;
+}
+
+#cart{
+    text-align: center;
+    margin-top:15px;
+}
+
+ul li{
+    text-align: left;
+    list-style: none;
+    font-size: 12px;
+}
+
+footer{
+    background-color:#172337;
+    color:white;
+}
+
+#head{
+    color:#876C56;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+#safe{
+    border-right:1px solid white;
+    margin-top:10px;
+    height:100px;
+}
+
+img{
+    width: 150px;
+    height: 120px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-size: 100%;
+}.carousel .carousel-item {
+    max-height:550px;
+}
+
+.carousel-item img {
+    object-fit:cover;
+    max-height:550px;
+}
+
+.carousel .carousel-item {
+    max-height:400px;
+}
+
+.carousel-item img {
+    object-fit:cover;
+    max-height:400px;
+}
+
+.wrapper > div {
+    background: #737373;
+    float:none;
+    position: relative;
+    width: 16.66666666666667%;
+    padding-bottom: 16.66666666666667%;  
+    justify-content: center;        
+    
+}
+.wrapper > div img {
+    position: absolute; top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+}

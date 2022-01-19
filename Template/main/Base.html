@@ -1,0 +1,19 @@
+{% include 'main/header.html'%}
+
+<div class="row row-cols-2 row-cols-lg-5 g-1 g-lg-3 text-center">
+    {% if request.user.is_authenticated %}
+
+    {% for x in data %}
+    <div class="col">
+        <div class="p-3 border bg-light"><img src="{{x.Image.url}}" alt="...">
+            <h6 style="color:black;">{{x.Name}}<br>
+                <i class="fas fa-rupee-sign"></i> {{x.Price}}
+            </h6> <button class="btn btn-warning">Add Cart</button>
+        </div>
+
+    </div>
+    {% endfor %}
+    {% endif %}
+</div>
+
+{% include 'main/footer.html'%}

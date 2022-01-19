@@ -1,0 +1,28 @@
+{% include 'main/header.html'%}
+<div class="row">
+    <h1 class="alert alert-success text-center">REGISTERATION-FORM</h1>
+    <div class="col-md-12">
+        <form action="{% url 'Reg_proc' %}" method="post" class="mb-5">
+            {% csrf_token %}
+            {% if error %}
+            <h2 style="color: red;" class="text-center">{{error}}</h2>
+            {% endif %}            
+            <div class="form-group m-3">
+                <label><b>UserName</b></label>
+                <input type="text" name="UserName" class="form-control form-control-sm">
+            </div>
+            <div class="form-group m-3">
+                <label><b>Password</b></label>
+                <input type="password" name="Password" class="form-control form-control-sm">
+            </div>
+            <div class="form-group m-3">
+                <label><b>Confirm-Password</b></label>
+                <input type="password" name="AgainPassword" class="form-control form-control-sm">
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg m-3">Sign-up</button>
+            <button type="reset" class="btn btn-primary btn-lg m-3">Reset</button>
+        </form>
+    </div>
+</div>
+
+{% include 'main/footer.html'%}
