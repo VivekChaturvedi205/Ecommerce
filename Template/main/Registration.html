@@ -6,18 +6,36 @@
             {% csrf_token %}
             {% if error %}
             <h2 style="color: red;" class="text-center">{{error}}</h2>
-            {% endif %}            
+            {% endif %}
+            <div class="form-group m-3">
+                <label><b>Full Name</b></label>
+                <input type="text" name="Name" class="form-control form-control-sm" placeholder="Enter here full Name"
+                    required>
+            </div>
+            <div class="form-group m-3">
+                <label><b>Email Id</b></label>
+                <input type="text" name="Email" class="form-control form-control-sm" placeholder="Enter here Email id"
+                    required>
+            </div>
+            <div class="form-group m-3">
+                <label><b>Contact Number</b></label>
+                <input type="text" name="Phone" class="form-control form-control-sm" placeholder="Enter Contact Number"
+                    required>
+            </div>
             <div class="form-group m-3">
                 <label><b>UserName</b></label>
-                <input type="text" name="UserName" class="form-control form-control-sm">
+                <input type="text" name="UserName" class="form-control form-control-sm" placeholder="Enter Username"
+                    required>
             </div>
             <div class="form-group m-3">
                 <label><b>Password</b></label>
-                <input type="password" name="Password" class="form-control form-control-sm">
+                <input type="password" name="Password" class="form-control form-control-sm" placeholder="Enter Password"
+                    required>
             </div>
             <div class="form-group m-3">
                 <label><b>Confirm-Password</b></label>
-                <input type="password" name="AgainPassword" class="form-control form-control-sm">
+                <input type="password" name="AgainPassword" class="form-control form-control-sm"
+                    placeholder="Enter Confirm Password" required>
             </div>
             <button type="submit" class="btn btn-primary btn-lg m-3">Sign-up</button>
             <button type="reset" class="btn btn-primary btn-lg m-3">Reset</button>

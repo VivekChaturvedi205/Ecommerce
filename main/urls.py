@@ -23,4 +23,7 @@ urlpatterns = [
     path('Reg_process/', views.Reg_Process, name="Reg_proc"),
     path('login_process/', views.login_Process, name="login_proc"),
     path('logout/', views.logout, name="logout"),
+    path('change/', views.change, name="change"),
+    path('change_procc/', views.change_password, name="change_procss"),
+    path('search', views.search, name="search"),
 ]
